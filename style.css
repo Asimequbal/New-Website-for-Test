@@ -5,12 +5,13 @@
     font-family: 'Roboto', sans-serif;
 }
 .full_body{
-    width: 100%;
+    min-width: 100%;
     width: inherit;
 }
 .home_page{
-    width: 100%;
-    height: 80vh;
+    position: relative;
+    min-width: 100%;
+    min-height: 80vh;
     background: url(image/1.jpg);
     background-size: cover;
     background-position: center;
@@ -21,7 +22,7 @@
     font-size: 2.1rem;
 }
 .nav_bar{
-    width: 100%;
+    min-width: 100%;
     height: 100px;
     border: 1px solid red;
     display: flex;
@@ -67,19 +68,95 @@ ul li a{
     line-height: 1.9rem;
     color: white;
 }
-.subscribe{
+.Intro_container{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    display: inline-block;
+}
+
+/* Subscribe Button CSS  stars here*/
+
+label input{
     width: 300px;
-    height: 50px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
     background-color: white;
     border-radius: 20px;
 }
-.Subscribe1{
-    width: 120px;
+label {
+    position: relative;
+}
+.subscribe1{
+    position: absolute;
+    right: 0;
+    width: 104px;
     height: 40px;
     border-radius: 20px;
     border: none;
     background: #ff8a5a;
-    float: right;
-    margin-top: 5px;
-    margin-right: 5px;
+}
+
+/* Subscribe button ends here */
+
+.second_page{
+    min-width: 100%;
+    min-height: 100vh;
+    border: 2px solid red;
+}
+.heading_ai{
+    max-width: 80%;
+    min-height: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    letter-spacing: .2rem;
+    line-height: 2.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.heading_ai h5,h4{
+    text-align: center
+}
+.heading_ai h4{
+    font-size: 1.8rem;
+}
+.heading_ai h5{
+    color: gray;
+}
+/* flex-box strarts here  */
+.payment_methods{
+    width: 80%;
+    min-height: 400px;
+    border: 2px solid rgb(17, 17, 17);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    margin: 0 auto;
+}
+.credit_card_employee{
+    width: 350px;
+    height: 280px;
+    border: 1px solid blue;
+    text-align: center;
+    padding-top: 50px;
+}
+.autometed_methods{
+    width: 350px;
+    height: 280px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+.credit_card_employee p{
+    padding-bottom: 20px;
+}
+.credit_card_employee h6{
+    padding-top: 20px;
+
+}
+.real_time_view{
+    width: 350px;
+    border-radius: 5px;
+    height: 280px;
+    border: 1px solid blue;
 }
